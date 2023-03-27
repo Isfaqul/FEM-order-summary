@@ -38,6 +38,7 @@ main {
   border-radius: 2em;
   overflow: hidden;
   max-width: 327px;
+  box-shadow: 0px 28px 32px rgba(56, 41, 224, 0.09);
 }
 
 .order-title {
@@ -89,6 +90,7 @@ main {
 .plan-price {
   margin: 0;
   font-weight: 600;
+  color: hsl(224, 23%, 55%);
 }
 
 .music-icon,
@@ -129,6 +131,7 @@ button {
   cursor: pointer;
   transition: background-color 100ms ease-in-out;
   border: none;
+  box-shadow: 0px 17px 18px -5px rgba(56, 41, 224, 0.2);
 }
 
 .btn:hover {
