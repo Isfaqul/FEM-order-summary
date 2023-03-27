@@ -1,0 +1,180 @@
+:root {
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --bright-hover-blue: #776aef;
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--pale-blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 2em;
+}
+
+.ctnr-main-card {
+  background-color: var(--white);
+  border-radius: 2em;
+  overflow: hidden;
+  max-width: 327px;
+}
+
+.order-title {
+  font-weight: 900;
+  font-size: 2.2rem;
+  text-align: center;
+  color: var(--dark-blue);
+  margin: 1.409em 0 0.773em 0;
+}
+
+.ctnr-inner-card {
+  padding: 0 2em 2em 2em;
+}
+
+#img-hero {
+  width: 100%;
+}
+
+.order-description {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--desaturated-blue);
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.ctnr-main-plan {
+  padding: 1.7em;
+  margin: 2.6em 0;
+  background-color: var(--very-pale-blue);
+  border-radius: 1.2em;
+  display: flex;
+  align-items: center;
+  color: var(--dark-blue);
+}
+
+.music-icon {
+  margin-right: 2em;
+  width: 100%;
+  max-width: 48px;
+}
+
+.plan-name {
+  margin: 0;
+  font-weight: 900;
+  font-weight: 1.4rem;
+}
+
+.plan-price {
+  margin: 0;
+  font-weight: 600;
+}
+
+.music-icon,
+.ctnr-plan,
+.change-link {
+  flex: 1;
+}
+
+.change-link {
+  display: block;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--bright-blue);
+  transition: color 100ms ease-in-out;
+  text-align: right;
+}
+
+.change-link:hover {
+  color: var(--bright-hover-blue);
+}
+
+.change-link:active {
+  color: var(--bright-hover-blue);
+}
+
+button {
+  display: block;
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--bright-blue);
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1em;
+  border-radius: 0.667em;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #776aef;
+}
+
+.cancel-btn {
+  font-size: 1.5rem;
+  margin: 1.6em auto 1em auto;
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  cursor: pointer;
+  transition: color 100ms ease-in-out;
+  border: none;
+}
+
+.cancel-btn:hover,
+.cancel-btn:active {
+  color: var(--bright-hover-blue);
+}
+
+@media (min-width: 1024px) {
+  .ctnr-inner-card {
+    padding: 0 4.7em 2em 4.7em;
+  }
+  .ctnr-main-card {
+    max-width: 449px;
+  }
+  .order-title {
+    font-size: 2.8rem;
+  }
+  .order-description {
+    font-size: 1.6rem;
+  }
+  .plan-name,
+  .plan-price {
+    font-size: 1.6rem;
+  }
+  .change-link {
+    font-size: 1.4rem;
+  }
+  .ctnr-main-plan {
+    padding: 2.5em 2.3em;
+  }
+  .cancel-btn {
+    margin: 2em auto 2em auto;
+  }
+}
